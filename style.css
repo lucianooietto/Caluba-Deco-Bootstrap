@@ -1,0 +1,265 @@
+.html{
+    background-color: #e8bf90;
+    font-family: 'Secular One', sans-serif;
+}
+#grilla{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "productos productos publicidad "
+    "servicios servicios publicidad "
+    "footer footer footer";
+    grid-template-rows: 400px 600px 400px 100px;
+    grid-template-columns: 200px 2fr 1fr;
+}
+.border{
+    border: 01px solid #ffff;
+}
+header{
+    grid-area: header;
+}
+footer{
+    grid-area: footer;
+}
+section#productos{
+    grid-area: productos;
+}
+section#servicios{
+    grid-area: servicios;
+}
+aside{
+    grid-area: publicidad;
+}
+/*HEADER*/
+header{
+    background-image: url(../practice/assets/calub\ img2.jpg);
+    background-repeat: no-repeat;
+}
+.padre-flex-listas{
+    display: flex;
+    flex-direction: row;
+
+   
+}
+.header__listas{
+    background-color: #f8e4e7;
+    margin: 20px;
+    
+    text-decoration: none;
+    padding: 15px;
+    list-style-type: none;
+}
+.header__links{
+    color: #3a2813;
+    text-decoration: none;
+}
+.header__links:hover{
+    color: #ffff;
+    
+}
+
+.padre-flex-listas__title{
+    font-size: 3rem;
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+    color: #3a2813;
+}
+/*PRODUCTOS*/
+.flex-padre-productos{
+    display: flex;
+    justify-content: space-around;
+}
+.flex-hijos-productos{
+    background-color: #f8e4e7;
+    padding: 1rem;
+}
+.productos-title{
+    color: #ffff;
+    text-align: center;
+}
+/*ASIDE*/
+.aside-title{
+    text-align: center;
+    color: #ffff;
+}
+.aside-parrafo{
+    color: #ffff;
+    text-align: center;
+}
+.aside-image{
+    display: flex;
+    justify-content: center;
+}
+.aside-parrafo-2{
+    color: #ffff;
+    text-align: center;
+}
+.aside-logo{
+    display: flex;
+    justify-content: center;
+}
+/*SERVICIOS*/
+.padre-flex-servicos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: 2rem;
+}
+.servicios-text{
+    text-align: center;
+}
+/*FOOTER*/
+.instagram{
+   
+    background-image: url(./assets/instagram.jfif);
+    color: #ffff;
+    text-decoration: none;
+   
+}
+.twitter{
+
+    text-decoration: none;
+    background-color: aqua;
+   
+}
+/*PRODUCTOS*/
+.productos-title-page{
+    color: #3a2813;
+    text-align: center;
+    font-size: 2rem;
+}
+.productos-subtitulo{
+    color: #ffff;
+    font-size: 2rem;
+}
+.padre-grid-galeria{
+    background-color: #3a2813;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-gap:30px;
+}
+.galeria-item{
+    position: relative;
+}
+.galeria-title{
+    background-color: #3a2813;
+    position: absolute;
+    bottom:0;
+    color: #ffff;
+}
+.imagenes-galeria{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.galeria-item:nth-child(3){
+    grid-row-start: span 2;
+}
+.galeria-item:nth-child(7){
+    grid-column-start: span 2;
+}
+/*CONTACTANOS*/
+.header-pages{
+    background-color: #e8bf90;
+    font-family: 'Secular One', sans-serif;
+}
+.padre-flex-contactanos{
+    display: flex;
+    justify-content: center;
+}
+.formContactanos{
+    background-color: #f8e4e7;
+    padding: 40px;
+    border: solid;
+    margin: auto 50px;
+}
+.formContactanos__title{
+    font-size: 4rem;
+    text-align: center;
+}
+/*INICIAR SESION*/
+.html-pages{
+    background-color: #e8bf90;
+    font-family: 'Secular One', sans-serif;
+}
+.tituloIniciarSesion{
+    text-align: center;
+    font-size: 50px;
+    background-color: #f8e4e7;
+    border: solid;
+    margin-bottom: 20px;
+}
+.padre-flex-iniciarSesion{
+    display: flex;
+    justify-content: center;
+}
+.formularioIniciarSesion{
+    border: solid;
+    padding: 150px;
+    background-color: #f8e4e7;
+}
+.formularioIniciarSesion__titulo{
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 3rem;
+}
+.formularioIniciarSesion__correo{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.formularioIniciarSesion__inputTexto{
+    size: 30px;
+}
+.formularioIniciarSesion__registrarme{
+    text-decoration: none;
+}
+/*REGISTRARME*/
+.padre-flex-registrarme{
+    display: flex;
+    justify-content: center;
+}
+.formRegistrarme{
+    background-color: #3a2813;
+    
+    padding: 100px;
+    position: relative;
+    
+    border: solid;
+}
+.formRegistrarme__title{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 50px;
+    font-weight: bold;
+}
+.instagram{
+    border: solid;
+    padding: 10px;
+    background-color: #f8e4e7;
+    display: inline-block;
+}
+.twitter{
+    border: solid;
+    padding: 10px;
+    background-color: #f8e4e7;
+    display: inline-block;
+    margin-top: 10px;
+}
+.volverInicio{
+    border: solid;
+    padding: 10px;
+    background-color: #f8e4e7;
+    display: inline-block;
+    margin-top: 10px;
+}
+@media screen and (min-width:768){
+    .header__listas{
+        flex-direction: row;
+        justify-content: end;
+    }
+}
