@@ -30,40 +30,43 @@ section#servicios{
 aside{
     grid-area: publicidad;
 }
+.body{
+    background-color: #e8bf90;
+}
 /*HEADER*/
-header{
-    background-image: url(../practice/assets/calub\ img2.jpg);
-    background-repeat: no-repeat;
-}
-.padre-flex-listas{
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-   
-}
-.header__listas{
-    background-color: #f8e4e7;
-    margin: 20px;
-    display:flex ;
-    text-decoration: none;
-    padding: 15px;
-    list-style-type: none;
-}
-.header__links{
+.titulo-index{
+    background-color: #ffff;
+    text-align: center;
     color: #3a2813;
+    margin-top: 80px;
+}
+.links{
+    background-color: #f8e4e7;
+}
+.div-links{
+    padding: 20px;
+    background-color: #ffff;
+}
+.header-links{
+    color: #000;
     text-decoration: none;
 }
-.header__links:hover{
-    color: #ffff;
-    
+.header-links:hover{
+    color: #e8bf90;
+}
+.titulo-carrusel{
+    color: #63251a;
+}
+.productos{
+    background-color: #e8bf90;;
 }
 
-.padre-flex-listas__title{
-    font-size: 3rem;
+.titulo-productos{
     text-align: center;
-    position: relative;
-    bottom: 40px;
     color: #3a2813;
+}
+.carrusel{
+    background-color: #f8e4e7;
 }
 /*PRODUCTOS*/
 .flex-padre-productos{
@@ -79,22 +82,26 @@ header{
     text-align: center;
 }
 /*ASIDE*/
+.aside{
+    background-color: #f8e4e7;
+}
 .aside-title{
     text-align: center;
     color: #ffff;
 }
-.aside-parrafo{
-    color: #ffff;
+.img-tarjeta{
+    display: flex;
+    justify-content: center;
+}
+.parrafo-aside{
+    color: #000;
     text-align: center;
 }
 .aside-image{
     display: flex;
     justify-content: center;
 }
-.aside-parrafo-2{
-    color: #ffff;
-    text-align: center;
-}
+
 .aside-logo{
     display: flex;
     justify-content: center;
@@ -187,36 +194,20 @@ header{
     background-color: #e8bf90;
     font-family: 'Secular One', sans-serif;
 }
+
+.section-iniciarSesion{
+    padding: 100px;
+    background-color: #3a2813;
+}
+.parrafo-iniciarSesion{
+    color: #ffff;
+}
 .tituloIniciarSesion{
     text-align: center;
-    font-size: 50px;
-    background-color: #f8e4e7;
-    border: solid;
-    margin-bottom: 20px;
+    color: #ffff;
 }
-.padre-flex-iniciarSesion{
-    display: flex;
-    justify-content: center;
-}
-.formularioIniciarSesion{
-    border: solid;
-    padding: 150px;
-    background-color: #f8e4e7;
-}
-.formularioIniciarSesion__titulo{
-    text-align: center;
-    margin-bottom: 60px;
-    font-size: 3rem;
-}
-.formularioIniciarSesion__correo{
-    font-size: 20px;
-    margin-bottom: 30px;
-}
-.formularioIniciarSesion__inputTexto{
-    size: 30px;
-}
-.formularioIniciarSesion__registrarme{
-    text-decoration: none;
+.button-registrarme{
+    color: #ffff;
 }
 /*REGISTRARME*/
 .padre-flex-registrarme{

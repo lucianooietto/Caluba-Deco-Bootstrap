@@ -5,52 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Archivo+Black&family=Libre+Franklin:wght@300&family=Red+Hat+Display:ital,wght@1,300&family=Secular+One&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title>caluba</title>
 </head>
 <body>
     <!--INICIO HEADER-->
-    <header class="header">
-        <nav>
-            <div class="padre-flex-listas">
-            <ul>
-                <li class="header__listas">
-                    <a class="header__links" href="../index.html">Inicio</a>
-                </li>
-                <li class="header__listas">
-                 <a class="header__links" href="iniciarsesion.html">Iniciar sesión</a> 
-                </li>
-                <li class="header__listas">
-                    <a class="header__links" href="contactanos.html">Contactanos</a>
-                </li>
-                <li class="header__listas">
-                    <a class="header__links" href="productos.html">Productos</a>
-                </li>
-                <li class="header__listas">
-                    <a class="header__links" href="sobrenosotros.html">Sobre nosotros</a>
-                </li>
-            </ul>
-        </div>
-        </nav>
-       </header> 
+    <header class="container-fluid">
+        <div class="row links">
+            <div class="col-2">
+                <img class="img-fluid" src="/assets/logo.jfif" alt="">
+            </div>
+            <div class="row div-links">
+            <div class="col">
+                <a class="header-links" href="/pages/iniciarsesion.html">INICIAR SESION</a></div>
+        
+        <div class="col"><a class="header-links" href="/pages/productos.html">PRODUCTOS</a></div>
+        <div class="col"><a class="header-links" href="/pages/nosotros.html">NOSOTROS</a></div>
+        <div class="col"><a class="header-links" href="/pages/contacto.html">CONTACTANOS</a></div>
+    </div>
+    </header>
        <hr>
-    <h1 class="tituloIniciarSesion">INICIAR SESIÓN</h1>
 <!--FIN HEADER-->
-<section class="padre-flex-iniciarSesion">
-<div class="formularioIniciarSesion"> 
-<h2  class="formularioIniciarSesion__titulo">CALUBÁ DECO</h2>
-<h3 class="formularioIniciarSesion__Correo">Correo electrónico</h3>
-<input class="formularioIniciarSesion__inputTexto" type="email">
-<h3 class="formularioIniciarSesion__contraseña">Contraseña</h3>
-<input type="password">
-<br>
-<input type="submit" value="Iniciar">
-<h4>No tenés cuenta?</h4>
-<nav>
-    <a class="formularioIniciarSesion__registrarme" href="./registrarme.html">Registrarme</a>
-</nav>
-<br>
-</div>
+<section class="section-iniciarSesion">
+    <h1 class="tituloIniciarSesion">INICIAR SESIÓN</h1>
+    <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Correo electrónico</label>
+      </div>
+      <div class="form-floating">
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Cotraseña</label>
+        <br>
+        <nav class="row">
+        <button type="button" class="col btn btn-primary">INICIAR SESIÓN</button>
+        <P class="parrafo-iniciarSesion">
+            No tenés cuenta?
+        </P>
+        <button type="button" class="col btn btn-primary"><a class="button-registrarme" href="/pages/registrarme.html">REGISTRARME</a></button>
+      </div>
+    </nav>
 </section>
 <!--INICIO DEL FOOTER-->
 <footer>
@@ -62,5 +56,6 @@
         <a class="volverInicio" href="../index.html">Volver al inicio</a>
     </nav>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
